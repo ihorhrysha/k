@@ -5,7 +5,7 @@ Note: kubectl-ai seems for me outdated and not maintained anymore. So I decided 
 ```
 
 
-| Name | Prompt | Description | Example |
+| NAME | PROMPT | DESCRIPTION | EXAMPLE |
 |------|--------|-------------|---------|
 | Pod | Generate k8s pod manifest for the demo app following naming best practices. Make sure all required fields are populated, provide one sentence description and name | Kubernetes Pod manifest for the demo app. | [app.yaml](./yaml/app.yaml) |
 | Pod with Liveness Probe | Generate k8s pod manifest with liveness probe for the demo app following naming best practices. Make sure all required fields are populated, provide one sentence description and name | Kubernetes Pod manifest with liveness probe for the demo app. | [app-livenessProbe.yaml](./yaml/app-livenessProbe.yaml) |

@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: demo-app-job
+  labels:
+    app: demo
+    tier: backend
+    environment: production
+spec:
+  template:
+    metadata:
+      labels:
+        app: demo
+    spec:
+      containers:
+      - name: demo-app-container
+        image: demo-app-image:latest
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+      restartPolicy: OnFailure
